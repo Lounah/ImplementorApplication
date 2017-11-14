@@ -12,12 +12,12 @@ public class ImplementorImpl implements Implementor {
     }
 
     @Override
-    public String implementFromDirectory(String directoryPath, String className) throws ImplementorException {
+    public String implementFromDirectory(final String directoryPath, final String className) throws ImplementorException {
         return reflectionApi.createClassFromDirectory(directoryPath, className);
     }
 
     @Override
-    public String implementFromStandardLibrary(String className) throws ImplementorException {
+    public String implementFromStandardLibrary(final String className) throws ImplementorException {
         return reflectionApi.createClassFromStandardLibrary(className);
     }
 }

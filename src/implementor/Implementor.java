@@ -1,6 +1,5 @@
 package implementor;
 
-
 public interface Implementor {
 
     String implementFromDirectory(final String directoryPath, final String className) throws ImplementorException;
